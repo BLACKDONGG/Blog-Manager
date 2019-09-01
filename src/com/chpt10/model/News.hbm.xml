@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.chpt10.model.News" table="news_table">
+		<id name="id" type="int" column="blog_id">
+			<generator class="identity"></generator>
+		</id>
+		<property name="title" type="string"></property>
+		<property name="content"></property>
+	</class>
+</hibernate-mapping>

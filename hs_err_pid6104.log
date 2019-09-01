@@ -1,0 +1,107 @@
+#
+# An unexpected error has been detected by Java Runtime Environment:
+#
+# java.lang.OutOfMemoryError: requested 2274016 bytes for Chunk::new. Out of swap space?
+#
+#  Internal Error (allocation.cpp:218), pid=6104, tid=3724
+#  Error: Chunk::new
+#
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (11.3-b02 mixed mode windows-amd64)
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000049c5f800):  JavaThread "CompilerThread0" daemon [_thread_in_native, id=3724, stack(0x000000004a2a0000,0x000000004a3a0000)]
+
+Stack: [0x000000004a2a0000,0x000000004a3a0000]
+
+Current CompileTask:
+C2: 55      com.sun.org.apache.xerces.internal.impl.dtd.models.DFAContentModel.calcFollowList(Lcom/sun/org/apache/xerces/internal/impl/dtd/models/CMNode;)V (224 bytes)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x0000000049c6a400 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=2636, stack(0x000000004a4a0000,0x000000004a5a0000)]
+  0x0000000049c63800 JavaThread "CompilerThread1" daemon [_thread_in_native, id=3828, stack(0x000000004a3a0000,0x000000004a4a0000)]
+=>0x0000000049c5f800 JavaThread "CompilerThread0" daemon [_thread_in_native, id=3724, stack(0x000000004a2a0000,0x000000004a3a0000)]
+  0x0000000049c5f000 JavaThread "Attach Listener" daemon [_thread_blocked, id=11496, stack(0x000000004a1a0000,0x000000004a2a0000)]
+  0x0000000049c5e800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=11400, stack(0x000000004a0a0000,0x000000004a1a0000)]
+  0x0000000049c23800 JavaThread "Finalizer" daemon [_thread_blocked, id=1416, stack(0x0000000049fa0000,0x000000004a0a0000)]
+  0x0000000049c23000 JavaThread "Reference Handler" daemon [_thread_blocked, id=5632, stack(0x0000000049ea0000,0x0000000049fa0000)]
+  0x0000000000a7e000 JavaThread "main" [_thread_in_Java, id=1280, stack(0x0000000002570000,0x0000000002670000)]
+
+Other Threads:
+  0x0000000049c21400 VMThread [stack: 0x0000000049da0000,0x0000000049ea0000] [id=8328]
+  0x0000000049c6ac00 WatcherThread [stack: 0x000000004a5a0000,0x000000004a6a0000] [id=12144]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ PSYoungGen      total 18688K, used 4993K [0x00000000346e0000, 0x0000000035bb0000, 0x0000000049430000)
+  eden space 16064K, 22% used [0x00000000346e0000,0x0000000034a5d258,0x0000000035690000)
+  from space 2624K, 54% used [0x0000000035690000,0x00000000357f33a0,0x0000000035920000)
+  to   space 2624K, 0% used [0x0000000035920000,0x0000000035920000,0x0000000035bb0000)
+ PSOldGen        total 42688K, used 0K [0x000000000ac30000, 0x000000000d5e0000, 0x00000000346e0000)
+  object space 42688K, 0% used [0x000000000ac30000,0x000000000ac30000,0x000000000d5e0000)
+ PSPermGen       total 21248K, used 11027K [0x0000000005830000, 0x0000000006cf0000, 0x000000000ac30000)
+  object space 21248K, 51% used [0x0000000005830000,0x00000000062f4f50,0x0000000006cf0000)
+
+Dynamic libraries:
+0x0000000000400000 - 0x000000000042e000 	D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\bin\javaw.exe
+0x00007ffbba340000 - 0x00007ffbba521000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffbb82f0000 - 0x00007ffbb83a2000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffbb6ff0000 - 0x00007ffbb7263000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffbb7fb0000 - 0x00007ffbb8051000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffbb83b0000 - 0x00007ffbb844e000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffbb87d0000 - 0x00007ffbb882b000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffbb77d0000 - 0x00007ffbb78f4000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffbb8840000 - 0x00007ffbb89d0000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffbb7270000 - 0x00007ffbb7290000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffbb7f80000 - 0x00007ffbb7fa8000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffbb73a0000 - 0x00007ffbb7532000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffbb7540000 - 0x00007ffbb75df000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffbb6710000 - 0x00007ffbb680a000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffbb8e90000 - 0x00007ffbb8ebd000 	C:\WINDOWS\System32\IMM32.DLL
+0x000000006d890000 - 0x000000006de48000 	D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\bin\server\jvm.dll
+0x00007ffba73b0000 - 0x00007ffba73d3000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffba7260000 - 0x00007ffba728a000 	C:\WINDOWS\SYSTEM32\winmmbase.dll
+0x00007ffbb6fa0000 - 0x00007ffbb6fe9000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x000000006d3b0000 - 0x000000006d3ba000 	D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\bin\hpi.dll
+0x00007ffbb8830000 - 0x00007ffbb8838000 	C:\WINDOWS\System32\PSAPI.DLL
+0x000000006d800000 - 0x000000006d80e000 	D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\bin\verify.dll
+0x000000006d450000 - 0x000000006d477000 	D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\bin\java.dll
+0x000000006d850000 - 0x000000006d862000 	D:\myeclipse\Common\binary\com.sun.java.jdk.win32.x86_64_1.6.0.013\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=GBK -Xbootclasspath/a:D:\myeclipse\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.0.0.me201110301321\data\libraryset\EE_5\javaee.jar;D:\myeclipse\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.0.0.me201110301321\data\libraryset\EE_5\jsf-impl.jar;D:\myeclipse\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.0.0.me201110301321\data\libraryset\EE_5\jsf-api.jar;D:\myeclipse\Common\plugins\com.genuitec.eclipse.j2eedt.core_10.0.0.me201110301321\data\libraryset\EE_5\jstl-1.2.jar 
+java_command: com.blog.operator.BlogOperator
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Node.js\;C:\Program Files\Common Files\Autodesk Shared\;D:\Git\Git\cmd;C:\WINDOWS\System32\OpenSSH\;D:\Ruby23-x64\bin;C:\Users\BLACKDONG\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;C:\Users\BLACKDONG\AppData\Roaming\npm;D:\WebStorm\WebStorm 2018.3.5\bin;;D:\Intellij IDEA\IntelliJ IDEA 2019.1.2\bin;;
+USERNAME=BLACKDONG
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 61 Stepping 4, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows NT 6.2 Build 9200 
+
+CPU:total 4 (8 cores per cpu, 2 threads per core) family 6 model 13 stepping 4, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, ht
+
+Memory: 4k page, physical 4094800k(650856k free), swap 7386444k(5168k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (11.3-b02) for windows-amd64 JRE (1.6.0_13-b03), built on Mar  9 2009 10:50:19 by "java_re" with MS VC++ 8.0
+
+time: Wed Aug 28 17:55:09 2019
+elapsed time: 1 seconds
+

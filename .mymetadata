@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="thisblog"
+  id="myeclipse.1562463349876"
+  context-root="/thisblog"
+  j2ee-spec="5.0"
+  archive="thisblog.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name></display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BlogList</servlet-name>
+    <servlet-class>api.BlogList</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddBlog</servlet-name>
+    <servlet-class>api.AddBlog</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DisplayBlog</servlet-name>
+    <servlet-class>api.DisplayBlog</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetMarkdown</servlet-name>
+    <servlet-class>api.GetMarkdown</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Pagenation</servlet-name>
+    <servlet-class>api.Pagenation</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BookClassify</servlet-name>
+    <servlet-class>api.BookClassify</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BlogClassify</servlet-name>
+    <servlet-class>api.BlogClassify</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TheLast</servlet-name>
+    <servlet-class>api.TheLast</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Verify</servlet-name>
+    <servlet-class>com.manager.user.Verify</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetRatings</servlet-name>
+    <servlet-class>api.GetRatings</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PublishComment</servlet-name>
+    <servlet-class>api.PublishComment</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ApplyLink</servlet-name>
+    <servlet-class>api.ApplyLink</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetLinkList</servlet-name>
+    <servlet-class>api.GetLinkList</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetTheLastRatings</servlet-name>
+    <servlet-class>api.GetTheLastRatings</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>VerifyManager</servlet-name>
+    <servlet-class>api.VerifyManager</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetVerifyCode</servlet-name>
+    <servlet-class>api.GetVerifyCode</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetNecessaryInformation</servlet-name>
+    <servlet-class>api.GetNecessaryInformation</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddAvatar</servlet-name>
+    <servlet-class>api.AddAvatar</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddMusic</servlet-name>
+    <servlet-class>api.AddMusic</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RecordMusicInfo</servlet-name>
+    <servlet-class>api.RecordMusicInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>EditMusicInformation</servlet-name>
+    <servlet-class>api.EditMusicInformation</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetMusicInfo</servlet-name>
+    <servlet-class>api.GetMusicInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetPaginationCount</servlet-name>
+    <servlet-class>api.GetPaginationCount</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>EditTimelineInfo</servlet-name>
+    <servlet-class>api.EditTimelineInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetTimeline</servlet-name>
+    <servlet-class>api.GetTimeline</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddTimeline</servlet-name>
+    <servlet-class>api.AddTimeline</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>BlogList</servlet-name>
+    <url-pattern>/api/BlogList</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddBlog</servlet-name>
+    <url-pattern>/AddBlog</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DisplayBlog</servlet-name>
+    <url-pattern>/api/DisplayBlog</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetMarkdown</servlet-name>
+    <url-pattern>/api/GetMarkdown</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Pagenation</servlet-name>
+    <url-pattern>/api/Pagenation</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BookClassify</servlet-name>
+    <url-pattern>/api/BookClassify</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BlogClassify</servlet-name>
+    <url-pattern>/api/BlogClassify</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TheLast</servlet-name>
+    <url-pattern>/api/TheLast</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Verify</servlet-name>
+    <url-pattern>/Verify</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetRatings</servlet-name>
+    <url-pattern>/api/GetRatings</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PublishComment</servlet-name>
+    <url-pattern>/api/PublishComment</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ApplyLink</servlet-name>
+    <url-pattern>/api/ApplyLink</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetLinkList</servlet-name>
+    <url-pattern>/api/GetLinkList</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetTheLastRatings</servlet-name>
+    <url-pattern>/api/GetTheLastRatings</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>VerifyManager</servlet-name>
+    <url-pattern>/api/VerifyManager</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetVerifyCode</servlet-name>
+    <url-pattern>/api/GetVerifyCode</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetNecessaryInformation</servlet-name>
+    <url-pattern>/api/GetNecessaryInformation</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddAvatar</servlet-name>
+    <url-pattern>/api/AddAvatar</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddMusic</servlet-name>
+    <url-pattern>/api/AddMusic</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RecordMusicInfo</servlet-name>
+    <url-pattern>/api/RecordMusicInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EditMusicInformation</servlet-name>
+    <url-pattern>/api/EditMusicInformation</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetMusicInfo</servlet-name>
+    <url-pattern>/api/GetMusicInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetPaginationCount</servlet-name>
+    <url-pattern>/api/GetPaginationCount</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EditTimelineInfo</servlet-name>
+    <url-pattern>/api/EditTimelineInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetTimeline</servlet-name>
+    <url-pattern>/api/GetTimeline</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddTimeline</servlet-name>
+    <url-pattern>/api/AddTimeline</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <error-page>
+    <error-code>404</error-code>
+    <location>/index.html</location>
+  </error-page>
+  <!-- <security-constraint>
+    <web-resource-collection >
+    	<web-resource-name >SSL</web-resource-name>
+        <url-pattern>/*</url-pattern>
+    </web-resource-collection>
+    <user-data-constraint>
+       <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+    </user-data-constraint>
+</security-constraint> -->
+</web-app>
